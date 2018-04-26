@@ -1,0 +1,37 @@
+.nav-pills{
+    font-family: Monserrat;
+    font-size: 1.8em;
+    font-color:#6F90A2; 
+    background-color:#042037;
+  }
+  
+  
+  body {
+    background-image:url(https://images.unsplash.com/photo-1501437547230-2068bdccfd1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=72fa7cf39b2f2c3ac7a7224ebc5de836&auto=format&fit=crop&w=500&q=60);
+    background-size:cover;
+    font-family: Monserrat;
+  }
+  
+  .btn-default{
+    background-color:#477187;
+    border-color:#477187;
+    font-size:1.5em;
+    border-radius:10px;
+  }
+  
+  h1{
+    font-size:3.5em;
+    color:#042037;
+    padding:12px;
+    margin-top:100px;
+  }
+  
+  .block{
+    
+  }
+  
+  
+  
+  /* https://www.youtube.com/watch?v=j2Ipme4Dt_M */
+  /* unsplash.com  042037 29506D */
+  
