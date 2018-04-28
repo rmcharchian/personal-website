@@ -1,58 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="styles/style.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-    <script type="text/javascript" src="vendors/angular/angular.min.js"></script>
-    <script type="text/javascript" src="vendors/angular-route/angular-route.min.js"></script>
-    <!-- Then add ngRoute as a dependency  angular.module('myApp', [require('angular-route')]); -->
-    <script type="text/javascript" src="vendors/jquery-3.2.1.min.js"></script>    
+    .header {
+      padding: 80px;
+      /* some padding */
+      text-align: center;
+      /* center the text */
+      background: #1abc9c;
+      /* green background */
+      color: white;
+      /* white text color */
+    }
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> 
-    <!-- integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
-  </head>
-  
+    /* Increase the font size of the <h1> element */
+
+    .header h1 {
+      font-size: 40px;
+    }
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden; /* Hide overflow */
+    background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+
+/* Column container */
+.row { 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main { 
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width:100%;
+    }
+}
+
+.footer {
+    padding: 20px; /* Some padding */
+    text-align: center; /* Center text*/
+    background: #ddd; /* Grey background */
+}
+
+  </style>
+</head>
 
 
-  <body>
-  <div>  
-    <ul class = "nav nav-pills">
- 
-      <li class = "pull-right">
-        <a href="#">About Me</a>
-      </li>
-      <li class = "pull-right">
-        <a href="#">Portfolio</a>
-      </li>
-      <li class = "pull-right">
-        <a href="#">Coding Tutorials</a>
-      </li>
-      <li class = "pull-right">
-        <a href="#">Contact Me</a>
-      </li>
-    </ul>
+<body>
+
+  <div class="header">
+    <h1>My Website</h1>
+    <p>A website created by me.</p>
   </div>
 
-  <div class = "pageOne">
-    <div class = "block text-center">
-    <h1>Roxie Charchian</h1>
-    <h2>"Outside of a dog, a book is a man's best friend.  Inside of a dog it's too dark to read."</h2>
-      <h3><i>-Groucho Marx</i></h3>
-    </div>
-    <div class ="btnlist text-center">
-      <a class ="btn btn-default" href ="#">Twitter</a>
-      <a class ="btn btn-default" href ="#">LinkedIn</a>
-      <a class ="btn btn-default" href ="#">GitHub</a>
+  <div class="navbar">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#" class="right">Link</a>
   </div>
 
-      
-  </body>
-  </html>
+  <div class="row">
+    <div class="side">...</div>
+    <div class="main">...</div>
+  </div>
+
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+
+</body>
+
+</html>
